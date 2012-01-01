@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: CorelDRAW -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xml:space="preserve"
+   width="32px"
+   height="32px"
+   style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+   viewBox="0 0 32 32"
+   id="svg3042"
+   version="1.1"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="resitor.svg"><metadata
+   id="metadata3062"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1680"
+   inkscape:window-height="988"
+   id="namedview3060"
+   showgrid="false"
+   inkscape:zoom="8.15625"
+   inkscape:cx="1.348659"
+   inkscape:cy="16"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg3042" />
+ <defs
+   id="defs3044">
+  <style
+   type="text/css"
+   id="style3046">
+   
+    .str0 {stroke:#2B2A29;stroke-width:1.18116}
+    .fil0 {fill:none}
+   
+  </style>
+ <filter
+   id="filter3088"
+   inkscape:label="Glow"
+   inkscape:menu="Shadows and Glows"
+   inkscape:menu-tooltip="Glow of object's own color at the edges"
+   color-interpolation-filters="sRGB"><feGaussianBlur
+     id="feGaussianBlur3090"
+     stdDeviation="5"
+     result="result91" /><feComposite
+     id="feComposite3092"
+     in2="result91"
+     in="SourceGraphic"
+     operator="over" /></filter></defs>
+ 
+<rect
+   style="fill:none;stroke:#000000;stroke-width:0.85848301999999999"
+   id="rect3164"
+   width="20.197447"
+   height="10.268685"
+   x="6.2469969"
+   y="10.176245" /><path
+   style="fill:none;stroke:#000000;stroke-width:1.13108087px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+   d="m 0.605505,15.693487 5.3330514,0"
+   id="path3171-1"
+   inkscape:connector-curvature="0" /><path
+   style="fill:none;stroke:#000000;stroke-width:1.13108087px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+   d="m 26.161061,15.570881 5.333051,0"
+   id="path3171-1-5"
+   inkscape:connector-curvature="0" /></svg>

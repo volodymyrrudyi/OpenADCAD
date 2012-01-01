@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/ui/icons">
+        <file>images/wire.svg</file>
+        <file>images/resitor.svg</file>
+        <file>images/capacitor.svg</file>
+        <file>images/diode.svg</file>
+        <file>images/label.svg</file>
+        <file>images/rotate-left.png</file>
+        <file>images/rotate-right.png</file>
+        <file>images/align-bottom.png</file>
+        <file>images/align-left.png</file>
+        <file>images/align-right.png</file>
+        <file>images/align-top.png</file>
+    </qresource>
+</RCC>

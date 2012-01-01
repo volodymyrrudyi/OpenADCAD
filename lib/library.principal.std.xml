@@ -1,0 +1,29 @@
+<library type="principal" namespace="std" images="images.principal.std" description="Standard principal scheme components" author="Volodymyr Rudyj">
+
+        <component name="Resistor" path="Passive">
+            <parameter name="resistance" default="100" />
+            <parameter name="temperature koefficient" default="1e-8" />
+            <parameter name="power" default="0.125" />
+        </component>
+
+        <component name="Capacitor">
+        </component>
+
+        <component name="Diode">
+            <parameter name="param1" default="100"/>
+        </component>
+
+        <component name="PNP">
+        </component>
+
+        <component name="NPN">
+        </component>
+
+        <component name="MOSFET">
+        </component>
+
+
+
+
+	
+</library>

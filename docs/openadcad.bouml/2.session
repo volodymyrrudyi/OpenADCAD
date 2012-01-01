@@ -1,0 +1,11 @@
+window_sizes 1200 674 300 894 480 120
+diagrams
+  active  classdiagram_ref 128002 // class
+    894 480 100 4 0 0
+end
+show_stereotypes
+selected class_ref 129666 // GraphicsComponent
+open
+  classview_ref 128002 // openadcad
+end
+end

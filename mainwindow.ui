@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabPrincipalScheme">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="statusTip">
+        <string/>
+       </property>
+       <attribute name="title">
+        <string>Page</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="SchemeView" name="principalSchemeView"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuUy">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionCreateProject"/>
+   </widget>
+   <widget class="QMenu" name="menuComponent">
+    <property name="title">
+     <string>Component</string>
+    </property>
+    <addaction name="actionPrincipal_Scheme_Component_Library"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menuGrid">
+     <property name="title">
+      <string>Grid</string>
+     </property>
+     <addaction name="actionNo_Grid"/>
+     <addaction name="action10x10_Grid"/>
+     <addaction name="action20x20_Grid"/>
+    </widget>
+    <addaction name="menuGrid"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionUndo_Command"/>
+    <addaction name="actionRedo_Command"/>
+   </widget>
+   <addaction name="menuUy"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuComponent"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionRotate_ItemsLeft"/>
+   <addaction name="actionRotate_Items_Right"/>
+   <addaction name="separator"/>
+   <addaction name="actionAlign_Left"/>
+   <addaction name="actionAlign_Top"/>
+   <addaction name="actionAlign_Right"/>
+   <addaction name="actionAlign_Bottom"/>
+  </widget>
+  <widget class="QDockWidget" name="dockProjectExplorer">
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>Project</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTreeView" name="projectTree">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>1677777</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockComponents">
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="windowTitle">
+    <string>Components</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QToolBox" name="componentToolBox">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="pageStandard">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>243</width>
+          <height>198</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Standard</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QToolButton" name="toolButton_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Wire</string>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/ui/icons/images/wire.svg</normaloff>:/ui/icons/images/wire.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>48</width>
+             <height>48</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tbText">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Text</string>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/ui/icons/images/label.svg</normaloff>:/ui/icons/images/label.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>48</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonIconOnly</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Test</string>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/ui/icons/images/resitor.svg</normaloff>:/ui/icons/images/resitor.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>48</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonIconOnly</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionCreateProject">
+   <property name="text">
+    <string>Create Project</string>
+   </property>
+   <property name="toolTip">
+    <string>Creates new project</string>
+   </property>
+  </action>
+  <action name="actionPrincipal_Scheme_Component_Library">
+   <property name="text">
+    <string>Principal Scheme Component Library</string>
+   </property>
+   <property name="toolTip">
+    <string>Browse through principal scheme components</string>
+   </property>
+  </action>
+  <action name="actionText">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ui/icons/images/label.svg</normaloff>:/ui/icons/images/label.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="toolTip">
+    <string>Add new text label</string>
+   </property>
+  </action>
+  <action name="actionNo_Grid">
+   <property name="text">
+    <string>No Grid</string>
+   </property>
+  </action>
+  <action name="action10x10_Grid">
+   <property name="text">
+    <string>10x10 Grid</string>
+   </property>
+  </action>
+  <action name="action20x20_Grid">
+   <property name="text">
+    <string>20x20 Grid</string>
+   </property>
+  </action>
+  <action name="actionRotate_ItemsLeft">
+   <property name="icon">
+    <iconset>
+     <normalon>:/ui/icons/images/rotate-left.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Rotate Items Left</string>
+   </property>
+   <property name="toolTip">
+    <string>Rotate selected items to left</string>
+   </property>
+  </action>
+  <action name="actionRotate_Items_Right">
+   <property name="icon">
+    <iconset>
+     <normalon>:/ui/icons/images/rotate-right.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Rotate Items Right</string>
+   </property>
+   <property name="toolTip">
+    <string>Rotate Selected Items Right</string>
+   </property>
+  </action>
+  <action name="actionUndo_Command">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="toolTip">
+    <string>Undo last command</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo_Command">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="toolTip">
+    <string>Redo last command</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionAlign_Left">
+   <property name="icon">
+    <iconset>
+     <normalon>:/ui/icons/images/align-left.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Align Left</string>
+   </property>
+   <property name="toolTip">
+    <string>Align components on the left side</string>
+   </property>
+  </action>
+  <action name="actionAlign_Right">
+   <property name="icon">
+    <iconset>
+     <normalon>:/ui/icons/images/align-right.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Align Right</string>
+   </property>
+   <property name="toolTip">
+    <string>Align items on the right side</string>
+   </property>
+  </action>
+  <action name="actionAlign_Top">
+   <property name="icon">
+    <iconset>
+     <normalon>:/ui/icons/images/align-top.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Align Top</string>
+   </property>
+   <property name="toolTip">
+    <string>Align items on the top side</string>
+   </property>
+  </action>
+  <action name="actionAlign_Bottom">
+   <property name="icon">
+    <iconset>
+     <normalon>:/ui/icons/images/align-bottom.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Align Bottom</string>
+   </property>
+   <property name="toolTip">
+    <string>Align Items on the bottom side</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SchemeView</class>
+   <extends>QGraphicsView</extends>
+   <header>schemeview.h</header>
+   <slots>
+    <signal>componentSelected(GraphicsComponent*)</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>tbText</sender>
+   <signal>clicked()</signal>
+   <receiver>actionText</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>136</x>
+     <y>519</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
